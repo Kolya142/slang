@@ -1,0 +1,99 @@
+[
+    {
+        "type": "WORD",
+        "args": [
+            "token"
+        ]
+    },
+    {
+        "type": "SET",
+        "args": [
+            "U8",
+            "*",
+            "msg",
+            "=",
+            "Hello, world!"
+        ]
+    },
+    {
+        "type": "SET",
+        "args": [
+            "I32",
+            "value",
+            "=",
+            "0"
+        ]
+    },
+    {
+        "type": "FUNCTION_EXEC",
+        "args": [
+            "print",
+            {
+                "type": "WORD",
+                "args": [
+                    "("
+                ]
+            },
+            {
+                "type": "WORD",
+                "args": [
+                    "%s"
+                ]
+            },
+            {
+                "type": "WORD",
+                "args": [
+                    ","
+                ]
+            },
+            {
+                "type": "WORD",
+                "args": [
+                    "msg"
+                ]
+            },
+            {
+                "type": "WORD",
+                "args": [
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "WORD",
+        "args": [
+            ";"
+        ]
+    },
+    {
+        "type": "FUNCTION_EXEC",
+        "args": [
+            "inc",
+            {
+                "type": "WORD",
+                "args": [
+                    "("
+                ]
+            },
+            {
+                "type": "WORD",
+                "args": [
+                    "value"
+                ]
+            },
+            {
+                "type": "WORD",
+                "args": [
+                    ")"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "WORD",
+        "args": [
+            ";"
+        ]
+    }
+]
